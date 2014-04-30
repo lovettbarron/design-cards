@@ -9,23 +9,28 @@ cardflip.Collections = cardflip.Collections || {};
 
         model: cardflip.Models.CardModel,
 
-    	url: '/scripts/data/cards.json',
+    	url: 'scripts/data/cards.json',
+
+    	selected: [],
 
         init: function() {
 
         },
 
-        getCardByCategory: function(id) {
-	        // var cards = this.pluck('') ? this.pluck('description') : "No desc";	
-	        var list = this.pluck(id)[0];
-	        return list.
-	        console.log('list',id,list)
+        getCardByCategory: function(id,prev) {
+	        var list = _.map(this.pluck(id)[0].cards, function(v) {
+	        	return v.title
+	        });
+	        if(!_.isUndefined(prev)) list = _.difference(list,prev); // remove previous
+	        console.log('list',list)
+	        var len = _.size(list);
+	        return list[Math.floor(Math.random() * len)]
+	        console.log('list',id,list, len)
         },
 
         getCategoryName: function(id) {
         	var name = this.pluck(id)[0].category;
-        	console.log('name',name)
-        	return this.pluck(id).at('category');
+        	return name;
         },
 
         categoryLength: function() {
