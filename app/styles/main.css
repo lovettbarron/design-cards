@@ -7639,17 +7639,16 @@ td.visible-print {
   border-radius: 1em;
   float: left;
   clear: none;
-  -webkit-box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.075);
 }
 @media only screen and (max-width: 640px) {
   /* line 17, card.scss */
   .card {
-    width: 100%;
+    margin: 2%;
+    width: 96%;
     height: 100%;
   }
 }
-/* line 23, card.scss */
+/* line 24, card.scss */
 .card .header {
   margin: 0;
   width: 100%;
@@ -7659,7 +7658,7 @@ td.visible-print {
   font-size: 1.8em;
   font-weight: 800;
 }
-/* line 34, card.scss */
+/* line 35, card.scss */
 .card .freeze {
   width: 100%;
   height: 30%;
@@ -7667,11 +7666,11 @@ td.visible-print {
   text-align: center;
   background: transparent;
 }
-/* line 41, card.scss */
+/* line 42, card.scss */
 .card .freeze.frozen {
   background: #eee;
 }
-/* line 46, card.scss */
+/* line 47, card.scss */
 .card .category {
   color: #999;
   padding: 2%;
