@@ -59,8 +59,8 @@ cardflip.Views = cardflip.Views || {};
 
         freezeCard: function() {
 	        this.freeze = !this.freeze;
-        	if(this.freeze) $(this.el).find('.freeze').addClass('frozen');
-	        else $(this.el).find('.frozen').removeClass('frozen');
+        	if(this.freeze) $(this.el).find('.freeze').addClass('frozen').html('unfreeze');
+	        else $(this.el).find('.frozen').removeClass('frozen').html('freeze');
         },
 
         getColor: function(search) {

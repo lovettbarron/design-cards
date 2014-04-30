@@ -32,15 +32,19 @@
 .card .freeze {
   width: 100%;
   height: 30%;
-  padding-top: 30%;
+  padding-top: 20%;
   text-align: center;
   background: transparent;
+  color: #eee;
+  font-size: 1.8em;
+  font-weight: 800;
 }
-/* line 42, card.scss */
+/* line 45, card.scss */
 .card .freeze.frozen {
+  color: white;
   background: #eee;
 }
-/* line 47, card.scss */
+/* line 51, card.scss */
 .card .category {
   color: #999;
   padding: 2%;
