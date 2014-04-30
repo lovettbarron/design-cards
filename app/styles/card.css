@@ -1,0 +1,30 @@
+/* line 1, card.scss */
+.card {
+  position: relative;
+  width: 200px;
+  height: 450px;
+  margin: 5px;
+  border: 1px solid #eee;
+  float: left;
+  clear: none;
+}
+@media only screen and (max-width: 640px) {
+  /* line 12, card.scss */
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* line 18, card.scss */
+.card .header {
+  width: 100%;
+  height: 60%;
+}
+/* line 23, card.scss */
+.card btn.freeze {
+  background: transparent;
+}
+/* line 25, card.scss */
+.card btn.freeze.frozen {
+  background: #eee;
+}
