@@ -10,7 +10,8 @@ cardflip.Views = cardflip.Views || {};
         errorTemplate: JST['app/scripts/templates/card-err.ejs'],
         events: {
         	'click .header': 'getNewCard',
-        	'click .freeze': 'freezeCard'
+        	'click .freeze': 'freezeCard',
+        	'click .category': 'nextCategory'
         },
         colors:[ '#8e7bb3','#919ec8','#a8cfd6','#cff8da','#dcddf5','#e0c1b0','#e0dfb0','#c391c8','#91c8a4' ],
         prev: [],
@@ -18,7 +19,6 @@ cardflip.Views = cardflip.Views || {};
         init: function() {
         	var _this = this;
         	this.freeze = false;
-        	console.log("hi")
         	this.category = this.options.category || 0;
 			this.collection.fetch({
                 success: function() {
@@ -35,7 +35,15 @@ cardflip.Views = cardflip.Views || {};
 	        $(this.el).html(this.template({
 	        	category: this.collection.getCategoryName(this.category),
             }));
+            this.resize();
             this.getNewCard();
+        },
+
+        resize: function() {
+        	if($(window).width()<640) {
+        		$(this.el).find('.card').height($(window).height())
+        			.width($(window).width()*.90)
+        	}
         },
 
         getNewCard: function() {
@@ -59,8 +67,13 @@ cardflip.Views = cardflip.Views || {};
 
         freezeCard: function() {
 	        this.freeze = !this.freeze;
-        	if(this.freeze) $(this.el).find('.freeze').addClass('frozen').html('unfreeze');
-	        else $(this.el).find('.frozen').removeClass('frozen').html('freeze');
+        	if(this.freeze) $(this.el).find('.freeze').addClass('frozen').html('Unlock?');
+	        else $(this.el).find('.frozen').removeClass('frozen').html('Lock?');
+        },
+
+        nextCategory: function() {
+        	if($(window).width()<640)
+        		window.cardflip.nextCategory();
         },
 
         getColor: function(search) {
