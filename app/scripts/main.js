@@ -15,7 +15,7 @@ window.cardflip = {
     init: function () {
         'use strict';
         if($(window).width() < 640)
-            $('body').width($(window).width() * this.mobile.total+1);
+            $('.game-board').width($(window).width() * this.mobile.total+1);
 
         this.Inst.CardCollection = new this.Collections.CardsCollection({
                 model: new this.Models.CardModel()
@@ -54,7 +54,7 @@ window.cardflip = {
 
     nextCategory: function() {
         this.mobile.category = (this.mobile.category+1)%this.mobile.total;
-        $('body').animate({
+        $('.game-board').animate({
             left: -(this.mobile.category*$(window).width()*.98)
         }, 300)
     }

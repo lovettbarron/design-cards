@@ -41,7 +41,7 @@ cardflip.Views = cardflip.Views || {};
 
         resize: function() {
         	if($(window).width()<640) {
-        		$(this.el).find('.card').height($(window).height())
+        		$(this.el).find('.card').height($(window).height()*.94)
         			.width($(window).width()*.90)
         	}
         },

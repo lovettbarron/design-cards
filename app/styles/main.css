@@ -7707,14 +7707,9 @@ td.visible-print {
 }
 
 /* Space out content a bit */
-/* line 12, main.scss */
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 @media only screen and (max-width: 640px) {
-  /* line 16, main.scss */
-  body {
+  /* line 21, main.scss */
+  .game-board {
     overflow: hidden;
     height: 100%;
     width: 100%;
@@ -7726,7 +7721,7 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 30, main.scss */
+  /* line 34, main.scss */
   .container {
     max-width: 730px;
   }

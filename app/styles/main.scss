@@ -10,9 +10,14 @@
 
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    @media only screen and (max-width : 640px) {
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+
+
+}
+
+.game-board {
+   @media only screen and (max-width : 640px) {
         & {
             overflow:hidden;
             height: 100%; width: 100%;
@@ -20,8 +25,7 @@ body {
             top: 0; left: 0;
 
         }
-    }
-
+    } 
 }
 
 
