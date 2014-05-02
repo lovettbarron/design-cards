@@ -7707,6 +7707,11 @@ td.visible-print {
 }
 
 /* Space out content a bit */
+/* line 12, main.scss */
+body {
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 640px) {
   /* line 21, main.scss */
   .game-board {
