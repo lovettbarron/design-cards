@@ -12,6 +12,8 @@ window.cardflip = {
         category: 0,
         total: 4
     },
+    theTimer: 10,
+    theInterval:null,
     init: function () {
         'use strict';
         if($(window).width() < 640)
@@ -50,6 +52,25 @@ window.cardflip = {
             v.init();
         })
 
+        this.theInterval = this.timer();
+    },
+
+    flipCards: function() {
+        $('.game-board').find('section').each(function(key, val) {
+                $(this).find('.header').trigger('click');
+            });
+    },
+
+    timer: function() {
+        var _this = this;
+        return setInterval(function() {
+            _this.theTimer--;
+            $('.timer').html(_this.theTimer + " seconds left")
+            if(_this.theTimer <= 0) {
+                _this.flipCards();
+                _this.theTimer = 120;
+            }
+        },1000);
     },
 
     nextCategory: function() {
