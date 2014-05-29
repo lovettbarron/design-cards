@@ -7712,8 +7712,18 @@ body {
   overflow: hidden;
 }
 
+/* line 19, main.scss */
+.header {
+  font-size: 24pt;
+}
+/* line 21, main.scss */
+.header .timer {
+  float: right;
+  padding-right: 20px;
+}
+
 @media only screen and (max-width: 640px) {
-  /* line 21, main.scss */
+  /* line 29, main.scss */
   .game-board {
     overflow: hidden;
     height: 100%;
@@ -7726,7 +7736,7 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 34, main.scss */
+  /* line 42, main.scss */
   .container {
     max-width: 730px;
   }

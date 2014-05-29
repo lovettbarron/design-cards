@@ -16,6 +16,14 @@ body {
 
 }
 
+.header {
+    font-size: 24pt;
+    .timer {
+        float:right;
+        padding-right:20px;
+    }
+}
+
 .game-board {
    @media only screen and (max-width : 640px) {
         & {
