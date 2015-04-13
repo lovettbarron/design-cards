@@ -1,0 +1,70 @@
+{
+	"1":{
+		"category": "Aspects of Decay",
+		"cards": [
+			{"title": "new"},
+			{"title": "in use"},
+			{"title": "recycled"},
+			{"title": "discarded or abandoned"},
+			{"title": "rotting"},
+			{"title": "decomposing"},
+			{"title": "nourishing new life"},
+			{"title": "ill "},
+			{"title": "losing effectiveness"},
+			{"title": "wildcard"},
+			{"title": "forgetting"}
+			]
+		},
+	"2":{
+		"category": "The Mood",
+		"cards": [
+			{"title": "Frustration"},
+			{"title": "Fear"},
+			{"title": "Transformation"},
+			{"title": "Joy"},
+			{"title": "Cooperation"},
+			{"title": "Resistance"},
+			{"title": "Panic"}
+			]
+		},
+	"3":{
+		"category": "Design Constraint",
+		"cards": [
+			{"title": "Miniaturization"},
+			{"title": "Fits in Pocket"},
+			{"title": "3 for $1"},
+			{"title": "one-offs"},
+			{"title": "Must Be Swallowed"},
+			{"title": "Crowd Funded"},
+			{"title": "Ultralight"},
+			{"title": "Familiar"},
+			{"title": "invisible"},
+			{"title": "edible"},
+			{"title": "autonomous"},
+			{"title": "cloud-enabled"},
+			{"title": "Sprayed on"},
+			{"title": "Imported from China"},
+			{"title": "Made by Nike"},
+			{"title": "Hot Button Political Issue"},
+			{"title": "Banned"}
+			]
+		},
+	"4":{
+		"category": "Sites",
+		"cards": [
+			{"title": "Smart city"},
+			{"title": "Coffee pod"},
+			{"title": "Grocery Store Shelf"},
+			{"title": "Farm and Agriculture"},
+			{"title": "Biomedical device"},
+			{"title": "Wearable device"},
+			{"title": "Environmental sensor"},
+			{"title": "Sensor network"},
+			{"title": "Automobile"},
+			{"title": "Computer"},
+			{"title": "Household appliance"},
+			{"title": "New Infrastructure"},
+			{"title": "Wildcard"}
+			]
+		}	
+}
