@@ -9,7 +9,7 @@ cardflip.Collections = cardflip.Collections || {};
 
         model: cardflip.Models.CardModel,
 
-    	url: 'scripts/data/cards.json',
+    	url: 'scripts/data/bio.json',
 
     	selected: [],
 

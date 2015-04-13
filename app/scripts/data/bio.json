@@ -1,18 +1,21 @@
 {
 	"1":{
-		"category": "Aspects of Decay",
+		"category": "Biologic",
 		"cards": [
-			{"title": "new"},
-			{"title": "in use"},
-			{"title": "recycled"},
-			{"title": "discarded or abandoned"},
-			{"title": "rotting"},
-			{"title": "decomposing"},
-			{"title": "nourishing new life"},
-			{"title": "ill "},
-			{"title": "losing effectiveness"},
-			{"title": "wildcard"},
-			{"title": "forgetting"}
+			{"title": "Synthetic Bio"},
+			{"title": "Genetically Modified *"},
+			{"title": "Microorganisms"},
+			{"title": "Biological products"},
+			{"title": "Gut flora"},
+			{"title": "Theraputic"},
+			{"title": "Life Extending"},
+			{"title": "Synthetic Ecosystems"},
+			{"title": "A Lab in Every Home"},
+			{"title": "New Materials"},
+			{"title": "Beauty"},
+			{"title": "Genetic Sequencing"},
+			{"title": "DNA Synthesis"},
+			{"title": "Invitro"}
 			]
 		},
 	"2":{
@@ -53,7 +56,9 @@
 		"category": "Sites",
 		"cards": [
 			{"title": "Smart city"},
-			{"title": "Coffee pod"},
+			{"title": "In my drink"},
+			{"title": "On my plate"},
+			{"title": "As my pet"},
 			{"title": "Grocery Store Shelf"},
 			{"title": "Farm and Agriculture"},
 			{"title": "Biomedical device"},
